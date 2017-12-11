@@ -4,9 +4,7 @@ import { Button, View, Text } from 'react-native'
 export default (props) => (
   <View stlye={{ flex: 1, backgroundColor: 'red' }}>
     <View style={styles.header}>
-      <View style={{ marginLeft: -8}}>
-        <Button title='Back' onPress={props.goBack} />
-      </View>
+      <Button title='Back' onPress={props.goBack} />
       <Text style={{ fontSize: 18 }}>demo of {props.name}</Text>
     </View>
     {props.children}
